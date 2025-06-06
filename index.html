@@ -23,8 +23,8 @@
           Preencha os campos e simule o seu financiamento
         </p>
       </div>
-      <div class="form">
-        <input class="inputArea" id="value" type="number" />
+      <form action="result.html" class="form">
+        <input class="inputArea" id="value" name="value" type="number" />
         <select class="inputArea" id="bank" name="banks">
           <option value="" disabled selected>Selecione um banco</option>
           <option value="itau">itau</option>
@@ -40,7 +40,9 @@
           <option value="4">4 meses</option>
         </select>
         <button id="greenButton">Simular financiamento</button>
-      </div>
+      </form>
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
