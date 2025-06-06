@@ -19,6 +19,17 @@ main {
     padding-top: 60px;
     padding-left: 25%;
     padding-right: 50px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.detail {
+    width: 150px;
+    position: absolute;
+    right: -75px;
+    top: 35vh;
+    display: flex;
+    transition: all 0.3s ease-in-out;
 }
 
 .left-section .logo-title {
@@ -70,12 +81,32 @@ main {
 .right-section {
     background-image: url(../assets/banner.png);
     background-size: cover;
+    transition: all 0.3s ease-in-out;
 }
 
 form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .left-section {
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+
+    .left-section p {
+        font-size: 48px;
+    }
+
+    .detail {
+        width: 100px;
+        position: absolute;
+        right: -50px;
+        top: 45vh;
+        display: flex;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -87,15 +118,27 @@ form {
         margin: 0;
     }
 
+    .detail {
+        width: 150px;
+        position: absolute;
+        right: 120px;
+        top: -100px;
+        transform: rotateZ(90deg);
+        display: flex;
+    }
+
     .left-section div {
         border-radius: 7px;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 30px;
-        box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 20px,
-            rgba(0, 0, 0, 0.05) 0px 6px 6px;
-        width: 344px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 20px, rgba(0, 0, 0, 0.05) 0px 6px 6px;
+        width: auto;
+    }
+
+    .left-section p {
+        font-size: 58px;
     }
 
     .left-section .logo-title {

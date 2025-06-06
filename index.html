@@ -11,18 +11,15 @@
         <div class="left">
             <img id="titleLogo" src="./assets/logoTitle.png" alt="" />
             <div class="content">
-                <h1>
-                    Simule o seu <br /><span id="greenText">financiamento</span
-                    >.
-                </h1>
-                <p>
-                    Escolha as melhores condições para financiamento do seu
-                    veículo
-                </p>
+                <h1>Simule o seu <br /><span id="greenText">financiamento</span>.</h1>
+                <p>Escolha as melhores condições para financiamento do seu veículo</p>
                 <img id="carImage" src="./assets/car.png" alt="" />
             </div>
         </div>
         <div class="right">
+            <div class="detail">
+                <img src="./assets/ellipseArrow.png" alt="" />
+            </div>
             <div class="top">
                 <img id="logo" src="./assets/emojis.png" alt="" />
                 <p id="formParagraph">
@@ -31,27 +28,17 @@
                 </p>
             </div>
             <form action="result/result.html" class="form">
-                <input
-                    class="inputArea"
-                    id="value"
-                    name="value"
-                    type="number"
-                    placeholder="38000"
-                />
-                <select class="inputArea" id="bank" name="banks">
-                    <option value="" disabled selected>
-                        Selecione um banco
-                    </option>
+                <input class="inputArea" id="value" name="valor" type="number" placeholder="38000" required />
+                <select class="inputArea" id="bank" name="banco" required>
+                    <option value="" disabled selected>Selecione um banco</option>
                     <option value="caixa">Caixa</option>
-                    <option value="santader">Santander</option>
+                    <option value="santander">Santander</option>
                     <option value="inter">Inter</option>
                     <option value="bradesco">Bradesco</option>
                     <option value="nubank">Nubank</option>
                 </select>
-                <select class="inputArea" id="month" name="months">
-                    <option value="" disabled selected>
-                        Em quantos meses?
-                    </option>
+                <select class="inputArea" id="parcelas" name="parcelas" required>
+                    <option value="" disabled selected>Em quantos meses?</option>
                     <option value="6">6 mês</option>
                     <option value="12">12 meses</option>
                     <option value="18">18 meses</option>
@@ -62,9 +49,7 @@
                     <option value="60">60 meses</option>
                     <option value="72">72 meses</option>
                 </select>
-                <button type="submit" id="greenButton">
-                    Simular financiamento
-                </button>
+                <button type="submit" id="greenButton">Simular financiamento</button>
             </form>
         </div>
     </body>
