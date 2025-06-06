@@ -78,3 +78,56 @@ form {
   flex-direction: column;
   gap: 10px;
 }
+
+
+@media only screen and (max-width: 400px) {
+  main {
+    display: flex;
+    min-width: 400px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left-section .logo-title {
+    margin-bottom: 50px;
+  }
+
+  .right-section {
+    display: none;
+  }
+
+  .left-section {
+    padding-inline: 30px;
+    padding-block: 30px;
+    border-radius: 7px;
+    border-style: solid;
+    border-color: #939393;
+    box-shadow: #4e4e4e 0px 0px 10px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+  }
+
+  form {
+    gap: 0px;
+  }
+
+  .left-section p {
+    font-size: 38px;
+    font-weight: 600;
+    color: #4e4e4e;
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #20c982;
+    border-radius: 7px;
+    min-width: 280px;
+    height: 64px;
+    border: 2px solid #20c982;
+  }
+}
