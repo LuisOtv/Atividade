@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-left: 25%;
+    padding-right: 50px;
+}
+
+.left-section .logo-title {
+    margin-bottom: 100px;
+    width: 160px;
+}
+
+.left-section h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #939393;
+    margin-bottom: 10px;
+}
+
+.left-section p {
+    font-size: 58px;
+    font-weight: 600;
+    color: #4e4e4e;
+    margin-bottom: 50px;
+}
+
+.left-section .alert {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-style: italic;
+    color: #939393;
+}
+
+.brand-color {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 4px;
+    color: #20c982;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #20c982;
+    border-radius: 7px;
+    max-width: 384px;
+    height: 64px;
+    border: 2px solid #20c982;
+}
+
+.right-section {
+    background-image: url(../assets/banner.png);
+    background-size: cover;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .left-section div {
+        border-radius: 7px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 20px,
+            rgba(0, 0, 0, 0.05) 0px 6px 6px;
+        width: 344px;
+    }
+
+    .left-section .logo-title {
+        display: none;
+    }
+
+    .left-section {
+        padding: 0;
+        margin: 0;
+    }
+
+    .left-section {
+        justify-content: center;
+        align-items: center;
+        margin-inline: 50px;
+        gap: 50px;
+    }
+
+    .left-section a {
+        width: 344px;
+    }
+
+    .right-section {
+        display: none;
+    }
+}

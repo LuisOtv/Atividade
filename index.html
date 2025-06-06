@@ -1,54 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
 
-  <body>
-    <div class="left">
-      <img id="titleLogo" src="assets/logoTitle.png" alt="" />
-      <div class="content">
-        <h1>Simule o seu <span id="greenText">financiamento</span></h1>
-        <p>Escolha as melhores condições para financiamento do seu veículo</p>
-        <img id="carImage" src="assets/car.png" alt="" />
-      </div>
-    </div>
-    <div class="right">
-      <div class="top">
-        <img id="logo" src="assets/logo.png" alt="" />
-        <p id="formParagraph">
-          Preencha os campos e simule o seu financiamento
-        </p>
-      </div>
-      <form action="result.html" class="form">
-        <input class="inputArea" id="value" name="value" type="number" />
-        <select class="inputArea" id="bank" name="banks">
-          <option value="" disabled selected>Selecione um banco</option>
-          <option value="caixa">Caixa</option>
-          <option value="santader">Santander</option>
-          <option value="inter">Inter</option>
-          <option value="bradesco">Bradesco</option>
-          <option value="nubank">Nubank</option>
-        </select>
-        <select class="inputArea" id="month" name="months">
-          <option value="" disabled selected>Em quantos meses?</option>
-          <option value="6">6 mês</option>
-          <option value="12">12 meses</option>
-          <option value="18">18 meses</option>
-          <option value="24">24 meses</option>
-          <option value="30">30 meses</option>
-          <option value="36">36 meses</option>
-          <option value="48">48 meses</option>
-          <option value="60">60 meses</option>
-          <option value="72">72 meses</option>
-        </select>
-        <button id="greenButton">Simular financiamento</button>
-      </form>
-    </div>
-
-    <script src="./script.js"></script>
-  </body>
+    <body>
+        <div class="left">
+            <img id="titleLogo" src="./assets/logoTitle.png" alt="" />
+            <div class="content">
+                <h1>
+                    Simule o seu <br /><span id="greenText">financiamento</span
+                    >.
+                </h1>
+                <p>
+                    Escolha as melhores condições para financiamento do seu
+                    veículo
+                </p>
+                <img id="carImage" src="./assets/car.png" alt="" />
+            </div>
+        </div>
+        <div class="right">
+            <div class="top">
+                <img id="logo" src="./assets/emojis.png" alt="" />
+                <p id="formParagraph">
+                    Preencha os campos e simule<br />
+                    o seu financiamento
+                </p>
+            </div>
+            <form action="result/result.html" class="form">
+                <input
+                    class="inputArea"
+                    id="value"
+                    name="value"
+                    type="number"
+                    placeholder="38000"
+                />
+                <select class="inputArea" id="bank" name="banks">
+                    <option value="" disabled selected>
+                        Selecione um banco
+                    </option>
+                    <option value="caixa">Caixa</option>
+                    <option value="santader">Santander</option>
+                    <option value="inter">Inter</option>
+                    <option value="bradesco">Bradesco</option>
+                    <option value="nubank">Nubank</option>
+                </select>
+                <select class="inputArea" id="month" name="months">
+                    <option value="" disabled selected>
+                        Em quantos meses?
+                    </option>
+                    <option value="6">6 mês</option>
+                    <option value="12">12 meses</option>
+                    <option value="18">18 meses</option>
+                    <option value="24">24 meses</option>
+                    <option value="30">30 meses</option>
+                    <option value="36">36 meses</option>
+                    <option value="48">48 meses</option>
+                    <option value="60">60 meses</option>
+                    <option value="72">72 meses</option>
+                </select>
+                <button type="submit" id="greenButton">
+                    Simular financiamento
+                </button>
+            </form>
+        </div>
+    </body>
 </html>
