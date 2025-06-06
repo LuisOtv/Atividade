@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: Inter;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: auto;
+    min-height: 100vh;
+    height: 100vh;
+    margin: auto;
+    max-width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#titleLogo {
+    padding-bottom: 50px;
+    width: 100px;
+}
+
+#carImage {
+    max-width: 380px;
+}
+
+.left {
+    height: 100%;
+    padding: 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding-left: 20%;
+}
+
+.content {
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+    max-width: 300px;
+}
+
+.right {
+    height: 100%;
+    justify-content: center;
+    padding: 30px;
+    padding-right: 20%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputArea {
+    padding: 20px;
+    border-radius: 7px;
+    border-color: #D9D9D9;
+    border-style: solid;
+}
+
+#greenButton {
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    border-radius: 7px;
+    border-color: #D9D9D9;
+    border-style: solid;
+    background-color: #20C97C;
+    color: white;
+}
+
+#logo {
+    width: 30px;
+}
+
+p {
+    color: #939393;
+}
+
+h1 {
+    font-size: 4vh;
+}
+
+#greenText {
+    color: #20C97C;
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    #titleLogo {
+        padding-bottom: 40px;
+        width: 150px;
+    }
+
+    .left,
+    .right {
+        background-color: white;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        gap: 0;
+    }
+
+    .left {
+        padding-top: 0px;
+        align-items: center;
+    }
+
+    #carImage,
+    #logo,
+    #formParagraph {
+
+        display: none;
+
+    }
+}
